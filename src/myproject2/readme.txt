@@ -51,12 +51,12 @@ public class Comment {
     from its grade062 field.  Note that if its grade062 field is null, 
     it concatenates an empty String instead of null.
 
-3. (12 points) Given the public "Commentable" interface in the "commenting.NNNNN" package,
+3. (12 points) Given the public "Commentable" interface in the "commenting.pootorn" package,
 
 /** --------------------------------------------
 public interface Commentable extends Iterable<CommentPlus062> {
    default boolean addComment(String message) { return addComment(message, null); }
-   boolean addComment(String message, Grade grade);
+   boolean addComment(String message, Grade062 grade);
    boolean removeComment(String message);
    Iterator<CommentPlus062> iterator();
    Collection<String> extract(Grade062 grade);
@@ -85,7 +85,7 @@ public interface Commentable extends Iterable<CommentPlus062> {
     a newly-created LinkedList.
 
 4.3 (10 points) a "addComment(...)" method that returns true if it adds 
-    the comment message with the grade to the "comments" field successfully.
+    the comment message with the grade to the "comments062" field successfully.
     Otherwise, it returns false. It will not add the comment message with 
     the grade if the comment message is null.
 
