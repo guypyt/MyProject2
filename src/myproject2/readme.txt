@@ -6,7 +6,7 @@
 /** --------------------------------------------
 public class Comment {
    private final String message;
-   public Comment062(String message) { this.message = message; }
+   public Comment(String message) { this.message = message; }
    @Override
    public boolean equals(Object obj) {
       if (this == obj) return true;
